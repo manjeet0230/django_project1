@@ -1,0 +1,91 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<body>
+
+<h1>The footer element</h1>
+<article>
+  <header>
+    <h1>A heading here</h1>
+    <p>Posted by John Doe</p>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+<div class="row">
+  <div class="col-12">
+    <form mathod="post">
+      {% csrf_token %}
+    <form>
+      <div>
+        <label for="">value1</label>
+        <input type="text" name="num1" class="form-control"/>
+      </div>
+
+      <div>
+        <label for="">value2</label>
+        <input type="text" name="num2" class="form-control"/>
+      </div>
+
+      <div>
+      <div class="pt-50">
+        <button type="submit">save</button>
+      </div>
+      output
+      <input type="text",value="{{output}}"/>
+
+
+    </form>
+
+</body>
+</html> {% endcomment %}
+
+{% comment %} This html file is for GET and the post mathod in django. {% endcomment %}
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The footer element</h1>
+<article>
+  <header>
+    <h1>A heading here</h1>
+    <p>Posted by John Doe</p>
+    <p>Some additional information here</p>
+  </header>
+  <p>Lorem Ipsum dolor set amet....</p>
+</article>
+<footer>
+  <p>Author: Hege Refsnes<br>
+  <a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+
+<div class="row">
+  <div class="col-12">
+    <form method="post">
+      {% csrf_token %}
+      <div>
+        <label for="">value1</label>
+        <input type="text" name="num1" value="{{n1}}" class="form-control"/>
+      </div>
+
+      <div>
+        <label for="">value2</label>
+        <input type="text" name="num2" value="{{n2}}" class="form-control"/>
+      </div>
+
+      <div class="pt-50">
+        <button type="submit">Save</button>
+      </div>
+    </form>
+
+    Output:
+    <input type="text" value="{{ output }}" readonly/>
+  </div>
+</div>
+
+</body>
+</html>
