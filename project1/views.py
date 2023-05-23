@@ -47,3 +47,4 @@ def index_page(request):
     except (TypeError, ValueError):
         pass
     return render(request, "indexpage.html", {'output': result})
+print('my name is manjeet singh rana')
